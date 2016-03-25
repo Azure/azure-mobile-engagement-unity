@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 1px * 2 lines at top -->
+    <item>
+        <shape android:shape="rectangle" >
+            <size android:height="1dip" />
+
+            <solid android:color="#b8b8b8" />
+        </shape>
+    </item>
+    <item android:top="1dip">
+        <shape android:shape="rectangle" >
+            <size android:height="1dip" />
+
+            <solid android:color="#a6a6a6" />
+        </shape>
+    </item>
+
+    <!-- a light grey gradient -->
+    <item android:top="2dip">
+        <shape android:shape="rectangle" >
+            <size android:height="29dip" />
+
+            <gradient
+                android:angle="-90"
+                android:endColor="#707070"
+                android:startColor="#989898" />
+        </shape>
+    </item>
+
+    <!-- a dark grey solid -->
+    <item android:top="31dip">
+        <shape android:shape="rectangle" >
+            <size android:height="30dip" />
+            <solid android:color="#22666666" />
+        </shape>
+    </item>
+
+    <!-- 2px bottom line at bottom -->
+    <item android:top="61dip">
+        <shape android:shape="rectangle" >
+            <size android:height="2dip" />
+            <solid android:color="#99343434" />
+        </shape>
+    </item>
+
+</layer-list>

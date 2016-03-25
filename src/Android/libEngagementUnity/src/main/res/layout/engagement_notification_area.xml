@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) Microsoft Corporation. All rights reserved.
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/engagement_notification_area"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="#B000" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/engagement_notification_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+            <LinearLayout
+                android:id="@+id/engagement_notification_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip" >
+
+                <TextView
+                    android:id="@+id/engagement_notification_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/engagement_notification_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textAppearance="@android:style/TextAppearance.Small" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/engagement_notification_image"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:adjustViewBounds="true" />
+
+            <ImageButton
+                android:id="@+id/engagement_notification_close_area"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#0F00"
+                android:src="@android:drawable/btn_dialog"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/engagement_notification_close"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:background="#0F00"
+            android:src="@drawable/engagement_close" />
+    </RelativeLayout>
+
+</merge>
