@@ -1,4 +1,5 @@
 ## Azure Mobile Engagement : Unity SDK
+
 ### Installation
 * Import the`Engagement.unitypackage`into your Unity project
 * Edit the configuration file `EngagementPlugin/EngagementConfiguration.cs` with your credentials
@@ -7,13 +8,17 @@
 
 ### Configuration
 The configuration of your application is performed via an `EngagementConfiguration` class located in the `EngagementPlugin/` directory. 
+
 ##### Engagement Configuration
+
 ###### Android
 - `ANDROID_CONNECTION_STRING` : the Android connection string (to retrieve from the Engagement portal)
-- `ANDROID_UNITY3D_ACTIVITY`: needs to be filled if your application does not use the default Unity Activity (`com.unity3d.player.UnityPlayerActivity`).
+- `ANDROID_UNITY3D_ACTIVITY`: needs to be filled if your application does not use the default Unity Activity (`com.unity3d.player.UnityPlayerActivity`)
+
 ###### iOS
 - `IOS_CONNECTION_STRING` : the iOS connection string (to retrieve from the Engagement portal)
 - `IOS_DISABLE_IDFA` : `true`|`false` : to disable the IDFA integration on iOS
+
 ###### Generic
 - `ENABLE_PLUGIN_LOG` : `true`|`false`, enable the plugin debug logs
 - `ENABLE_NATIVE_LOG` : `true`|`false`, enable the Engagement native SDK to debug logs
@@ -29,18 +34,21 @@ The configuration of your application is performed via an `EngagementConfigurati
     * `LocationReportingMode.NONE`
 	* `LocationReportingMode.FOREGROUND`
 	* `LocationReportingMode.BACKGROUND`
+
 ##### Reach support
+
 ###### Generic
 - `ENABLE_REACH` : `true`|`false`, to enable the reach integration 
 - `ACTION_URL_SCHEME` : the url scheme of your application when using redirect actions in your campaign
+
 ###### iOS
 - `IOS_REACH_ICON` : the path (relative to the *Assets/* directory) of the icon to display reach notification on iOS. If not specified, the application icon will be used
+
 ###### Android
 - `ANDROID_REACH_ICON` : the path (relative to the *Assets/* directory) of the icon to display reach notification on Android. If not specified, the application icon will be used
 - `ANDROID_GOOGLE_PROJECT_NUMBER` : the project number used as the GCM (Google Cloud Messaging) sender ID
 
 ##### Notes
-
 * Do not follow the installation instruction from the Engagement native SDK for Android in iOS : in the Unity Engagement SDK, the application configuration is performed automatically (cf. `EngagementPlugin/Editor/EngagementPostBuild.cs` to see how it works under the hood).
 
 ###  Basic Integration
@@ -56,11 +64,13 @@ Basic initialization:
 		EngagementAgent.StartActivity ("home");
 	}
 ```
+
 ### Reach Integration
 To be able to receive pushes from your application, you need to call  `EngagementReach.initialize()` and define the 3 delegates (events) to be called when a push related event is received
 * `StringDataPushReceived(string _category, string _body)` to receive text data push
 * `Base64DataPushReceived(string _category, byte[] data, string _encodedbody)` to receive binary push (through byte[] and base64 encoded string)
 * `HandleURL(string _url)` when an application specific URL is triggered (from a push campaign for example)
+
 ##### Notes
 * Reach must be enabled in the configuration file by setting the `EngagementConfiguration.ENABLE_REACH`variable
 * The URL scheme must match the one defined in the `EngagementConfiguration.ACTION_URL_SCHEME` setting
@@ -93,11 +103,13 @@ Initialization with push support :
 ```
 
 ### Full API
+
 ##### Initialization
 * `EngagementAgent.Initialize`
 * `EngagementReach.Initialize`
 
 (see above)
+
 ##### Reporting APIs 
 * `EngagementAgent.StartActivity`
 * `EngagementAgent.EndActivity`
@@ -110,8 +122,8 @@ Initialization with push support :
 * `EngagementAgent.SendSessionEvent`
 * `EngagementAgent.SendSessionError`
 * `EngagementAgent.SendAppInfo`
-
 (see the AZME documentation)
+
 ##### Miscellaneous:
 * `EngagementAgent.SaveUserPreferences`
 * `EngagementAgent.RestoreUserPreferences`
