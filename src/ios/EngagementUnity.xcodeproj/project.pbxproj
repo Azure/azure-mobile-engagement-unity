@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		095ECF871BCAFCC100521802 /* libreach.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 095ECF751BCAFCC100521802 /* libreach.a */; };
+		095ECF891BCAFCC100521802 /* libengagement.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 095ECF861BCAFCC100521802 /* libengagement.a */; };
+		09C5578A1BCC418D0092C6B8 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C557891BCC418D0092C6B8 /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		09C5578C1BCC41A50092C6B8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C5578B1BCC41A50092C6B8 /* SystemConfiguration.framework */; };
+		09C5578E1BCC41B40092C6B8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C5578D1BCC41B40092C6B8 /* CFNetwork.framework */; };
+		09C557901BCC41C00092C6B8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C5578F1BCC41C00092C6B8 /* CoreLocation.framework */; };
+		09C557921BCC41C90092C6B8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C557911BCC41C90092C6B8 /* AdSupport.framework */; };
+		7E6AD0C21BF3EC1500989D86 /* EngagementUnity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6AD0C01BF3EC1500989D86 /* EngagementUnity.m */; };
+		7EDE16671C0250430003E822 /* EngagementShared.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDE16661C0250430003E822 /* EngagementShared.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		094EB0501BCAF4C60005128A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		094EB0521BCAF4C60005128A /* libEngagementUnity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEngagementUnity.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		095ECF601BCAFCC100521802 /* AEAnnouncementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEAnnouncementViewController.h; sourceTree = "<group>"; };
+		095ECF611BCAFCC100521802 /* AEAutorotateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEAutorotateView.h; sourceTree = "<group>"; };
+		095ECF621BCAFCC100521802 /* AEContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEContentViewController.h; sourceTree = "<group>"; };
+		095ECF631BCAFCC100521802 /* AEDefaultAnnouncementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDefaultAnnouncementViewController.h; sourceTree = "<group>"; };
+		095ECF641BCAFCC100521802 /* AEDefaultNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDefaultNotifier.h; sourceTree = "<group>"; };
+		095ECF651BCAFCC100521802 /* AEDefaultPollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDefaultPollViewController.h; sourceTree = "<group>"; };
+		095ECF661BCAFCC100521802 /* AEInteractiveContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEInteractiveContent.h; sourceTree = "<group>"; };
+		095ECF671BCAFCC100521802 /* AENotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AENotificationView.h; sourceTree = "<group>"; };
+		095ECF681BCAFCC100521802 /* AENotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AENotifier.h; sourceTree = "<group>"; };
+		095ECF691BCAFCC100521802 /* AEPollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEPollViewController.h; sourceTree = "<group>"; };
+		095ECF6A1BCAFCC100521802 /* AEReachAbstractAnnouncement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachAbstractAnnouncement.h; sourceTree = "<group>"; };
+		095ECF6B1BCAFCC100521802 /* AEReachAnnouncement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachAnnouncement.h; sourceTree = "<group>"; };
+		095ECF6C1BCAFCC100521802 /* AEReachContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachContent.h; sourceTree = "<group>"; };
+		095ECF6D1BCAFCC100521802 /* AEReachDataPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachDataPush.h; sourceTree = "<group>"; };
+		095ECF6E1BCAFCC100521802 /* AEReachDataPushDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachDataPushDelegate.h; sourceTree = "<group>"; };
+		095ECF6F1BCAFCC100521802 /* AEReachModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachModule.h; sourceTree = "<group>"; };
+		095ECF701BCAFCC100521802 /* AEReachNotifAnnouncement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachNotifAnnouncement.h; sourceTree = "<group>"; };
+		095ECF711BCAFCC100521802 /* AEReachPoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachPoll.h; sourceTree = "<group>"; };
+		095ECF721BCAFCC100521802 /* AEReachPollQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachPollQuestion.h; sourceTree = "<group>"; };
+		095ECF731BCAFCC100521802 /* AEViewControllerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEViewControllerUtil.h; sourceTree = "<group>"; };
+		095ECF741BCAFCC100521802 /* AEWebAnnouncementJsBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEWebAnnouncementJsBridge.h; sourceTree = "<group>"; };
+		095ECF751BCAFCC100521802 /* libreach.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libreach.a; sourceTree = "<group>"; };
+		095ECF771BCAFCC100521802 /* AEDefaultAnnouncementView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AEDefaultAnnouncementView.xib; sourceTree = "<group>"; };
+		095ECF781BCAFCC100521802 /* AEDefaultPollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AEDefaultPollView.xib; sourceTree = "<group>"; };
+		095ECF791BCAFCC100521802 /* AENotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AENotificationView.xib; sourceTree = "<group>"; };
+		095ECF7A1BCAFCC100521802 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		095ECF801BCAFCC100521802 /* AEModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEModule.h; sourceTree = "<group>"; };
+		095ECF811BCAFCC100521802 /* AEPushMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEPushMessage.h; sourceTree = "<group>"; };
+		095ECF821BCAFCC100521802 /* AEStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEStorage.h; sourceTree = "<group>"; };
+		095ECF831BCAFCC100521802 /* EngagementAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngagementAgent.h; sourceTree = "<group>"; };
+		095ECF841BCAFCC100521802 /* EngagementTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngagementTableViewController.h; sourceTree = "<group>"; };
+		095ECF851BCAFCC100521802 /* EngagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngagementViewController.h; sourceTree = "<group>"; };
+		095ECF861BCAFCC100521802 /* libengagement.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libengagement.a; sourceTree = "<group>"; };
+		09C557891BCC418D0092C6B8 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		09C5578B1BCC41A50092C6B8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		09C5578D1BCC41B40092C6B8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		09C5578F1BCC41C00092C6B8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		09C557911BCC41C90092C6B8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		09C557931BCC41D50092C6B8 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		7E6AD0BD1BF3EC1500989D86 /* EngagementShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngagementShared.h; sourceTree = "<group>"; };
+		7E6AD0BF1BF3EC1500989D86 /* EngagementUnity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngagementUnity.h; sourceTree = "<group>"; };
+		7E6AD0C01BF3EC1500989D86 /* EngagementUnity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EngagementUnity.m; sourceTree = "<group>"; };
+		7EDE16661C0250430003E822 /* EngagementShared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EngagementShared.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		094EB04F1BCAF4C60005128A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C557921BCC41C90092C6B8 /* AdSupport.framework in Frameworks */,
+				09C557901BCC41C00092C6B8 /* CoreLocation.framework in Frameworks */,
+				09C5578E1BCC41B40092C6B8 /* CFNetwork.framework in Frameworks */,
+				09C5578C1BCC41A50092C6B8 /* SystemConfiguration.framework in Frameworks */,
+				09C5578A1BCC418D0092C6B8 /* CoreTelephony.framework in Frameworks */,
+				095ECF891BCAFCC100521802 /* libengagement.a in Frameworks */,
+				095ECF871BCAFCC100521802 /* libreach.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		094EB0491BCAF4C60005128A = {
+			isa = PBXGroup;
+			children = (
+				09C557931BCC41D50092C6B8 /* libxml2.tbd */,
+				09C557911BCC41C90092C6B8 /* AdSupport.framework */,
+				09C5578F1BCC41C00092C6B8 /* CoreLocation.framework */,
+				09C5578D1BCC41B40092C6B8 /* CFNetwork.framework */,
+				09C5578B1BCC41A50092C6B8 /* SystemConfiguration.framework */,
+				09C557891BCC418D0092C6B8 /* CoreTelephony.framework */,
+				095ECF5E1BCAFCC100521802 /* EngagementReach */,
+				095ECF7B1BCAFCC100521802 /* EngagementSDK */,
+				095ECF5A1BCAFC8C00521802 /* src */,
+				094EB0531BCAF4C60005128A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		094EB0531BCAF4C60005128A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				094EB0521BCAF4C60005128A /* libEngagementUnity.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		095ECF5A1BCAFC8C00521802 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				7EDE16661C0250430003E822 /* EngagementShared.m */,
+				7E6AD0BD1BF3EC1500989D86 /* EngagementShared.h */,
+				7E6AD0BF1BF3EC1500989D86 /* EngagementUnity.h */,
+				7E6AD0C01BF3EC1500989D86 /* EngagementUnity.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		095ECF5E1BCAFCC100521802 /* EngagementReach */ = {
+			isa = PBXGroup;
+			children = (
+				095ECF5F1BCAFCC100521802 /* Headers */,
+				095ECF751BCAFCC100521802 /* libreach.a */,
+				095ECF761BCAFCC100521802 /* res */,
+			);
+			path = EngagementReach;
+			sourceTree = "<group>";
+		};
+		095ECF5F1BCAFCC100521802 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				095ECF601BCAFCC100521802 /* AEAnnouncementViewController.h */,
+				095ECF611BCAFCC100521802 /* AEAutorotateView.h */,
+				095ECF621BCAFCC100521802 /* AEContentViewController.h */,
+				095ECF631BCAFCC100521802 /* AEDefaultAnnouncementViewController.h */,
+				095ECF641BCAFCC100521802 /* AEDefaultNotifier.h */,
+				095ECF651BCAFCC100521802 /* AEDefaultPollViewController.h */,
+				095ECF661BCAFCC100521802 /* AEInteractiveContent.h */,
+				095ECF671BCAFCC100521802 /* AENotificationView.h */,
+				095ECF681BCAFCC100521802 /* AENotifier.h */,
+				095ECF691BCAFCC100521802 /* AEPollViewController.h */,
+				095ECF6A1BCAFCC100521802 /* AEReachAbstractAnnouncement.h */,
+				095ECF6B1BCAFCC100521802 /* AEReachAnnouncement.h */,
+				095ECF6C1BCAFCC100521802 /* AEReachContent.h */,
+				095ECF6D1BCAFCC100521802 /* AEReachDataPush.h */,
+				095ECF6E1BCAFCC100521802 /* AEReachDataPushDelegate.h */,
+				095ECF6F1BCAFCC100521802 /* AEReachModule.h */,
+				095ECF701BCAFCC100521802 /* AEReachNotifAnnouncement.h */,
+				095ECF711BCAFCC100521802 /* AEReachPoll.h */,
+				095ECF721BCAFCC100521802 /* AEReachPollQuestion.h */,
+				095ECF731BCAFCC100521802 /* AEViewControllerUtil.h */,
+				095ECF741BCAFCC100521802 /* AEWebAnnouncementJsBridge.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		095ECF761BCAFCC100521802 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				095ECF771BCAFCC100521802 /* AEDefaultAnnouncementView.xib */,
+				095ECF781BCAFCC100521802 /* AEDefaultPollView.xib */,
+				095ECF791BCAFCC100521802 /* AENotificationView.xib */,
+				095ECF7A1BCAFCC100521802 /* close.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		095ECF7B1BCAFCC100521802 /* EngagementSDK */ = {
+			isa = PBXGroup;
+			children = (
+				095ECF7F1BCAFCC100521802 /* Headers */,
+				095ECF861BCAFCC100521802 /* libengagement.a */,
+			);
+			path = EngagementSDK;
+			sourceTree = "<group>";
+		};
+		095ECF7F1BCAFCC100521802 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				095ECF801BCAFCC100521802 /* AEModule.h */,
+				095ECF811BCAFCC100521802 /* AEPushMessage.h */,
+				095ECF821BCAFCC100521802 /* AEStorage.h */,
+				095ECF831BCAFCC100521802 /* EngagementAgent.h */,
+				095ECF841BCAFCC100521802 /* EngagementTableViewController.h */,
+				095ECF851BCAFCC100521802 /* EngagementViewController.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		094EB0511BCAF4C60005128A /* EngagementUnity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 094EB05B1BCAF4C60005128A /* Build configuration list for PBXNativeTarget "EngagementUnity" */;
+			buildPhases = (
+				094EB04E1BCAF4C60005128A /* Sources */,
+				094EB04F1BCAF4C60005128A /* Frameworks */,
+				094EB0501BCAF4C60005128A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EngagementUnity;
+			productName = azme;
+			productReference = 094EB0521BCAF4C60005128A /* libEngagementUnity.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		094EB04A1BCAF4C60005128A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Olivier Goguel";
+				TargetAttributes = {
+					094EB0511BCAF4C60005128A = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 094EB04D1BCAF4C60005128A /* Build configuration list for PBXProject "EngagementUnity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 094EB0491BCAF4C60005128A;
+			productRefGroup = 094EB0531BCAF4C60005128A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				094EB0511BCAF4C60005128A /* EngagementUnity */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		094EB04E1BCAF4C60005128A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDE16671C0250430003E822 /* EngagementShared.m in Sources */,
+				7E6AD0C21BF3EC1500989D86 /* EngagementUnity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		094EB0591BCAF4C60005128A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		094EB05A1BCAF4C60005128A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		094EB05C1BCAF4C60005128A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EngagementReach",
+					"$(PROJECT_DIR)/EngagementSDK",
+					"$(PROJECT_DIR)/azme/EngagementReach",
+					"$(PROJECT_DIR)/azme/EngagementSDK",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		094EB05D1BCAF4C60005128A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EngagementReach",
+					"$(PROJECT_DIR)/EngagementSDK",
+					"$(PROJECT_DIR)/azme/EngagementReach",
+					"$(PROJECT_DIR)/azme/EngagementSDK",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		094EB04D1BCAF4C60005128A /* Build configuration list for PBXProject "EngagementUnity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				094EB0591BCAF4C60005128A /* Debug */,
+				094EB05A1BCAF4C60005128A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		094EB05B1BCAF4C60005128A /* Build configuration list for PBXNativeTarget "EngagementUnity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				094EB05C1BCAF4C60005128A /* Debug */,
+				094EB05D1BCAF4C60005128A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 094EB04A1BCAF4C60005128A /* Project object */;
+}
