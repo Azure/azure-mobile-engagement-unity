@@ -177,7 +177,8 @@ typedef enum _AEReachModuleState
 /**
  * Indicate if feedback with status code should be sent for a push message.
  * This method queries the db and updates the db at the same time.
- * @param The flag indicating if feedback should be sent or not.
+ * @param status The flag indicating if feedback should be sent or not.
+ * @param pushId Push Id of the message.
  */
 - (BOOL)shouldSendFeedback:(NSString*)status forPushId:(NSString*)pushId;
 
