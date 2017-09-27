@@ -155,6 +155,11 @@ It only works on Mac OSX, with XCode, Unity and Android Studio installed.
 
 ### History
 
+##### 1.3.0
+* Updated iOS SDK to 4.1.0 (iOS 6 deprecation, iOS 11 support)
+* Updated iOS SDK to 4.3.1 (Android O support)
+* Fix generated Android manifest file not always detected
+
 ##### 1.2.2
 * Updated iOS SDK to 4.0.1
 
